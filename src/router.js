@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import ReportComponent from './components/ReportComponent'
-import GraphComponent from './components/GraphComponent'
+import GraphWrapperComponent from './components/Graph/GraphWrapperComponent'
 
 Vue.use(Router)
 
@@ -17,10 +17,7 @@ export default new Router({
     {
       path: '/graph',
       name: 'graph',
-      // route level code-splitting
-      // this generates a separate chunk (about.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: GraphComponent
+      component: GraphWrapperComponent
     }
   ]
 })
